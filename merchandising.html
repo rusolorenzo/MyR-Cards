@@ -8,9 +8,8 @@
 <link rel="stylesheet" href="../css/styles.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-</head>
 <body>
+
     <header>
         <nav class="nav">
             <div class="nav__container">
@@ -30,46 +29,63 @@
         </nav>
     </header>
 
-    <main class="main-surf">
-        <div class="container__sobres">
-            <div class="row row--diagonal">
-                <div class="sobre-1 col-12 col-md-6 mx-auto d-flex justify-content-center">
-                    <section class="sobre1__section ">
-                        <img class="img__section" src="img/tabla-surf-5.png" alt="">
-                        <p class="p__section-s">Tabla Surf Blanca con detalles en celeste y amarillo
-                        </p>
-                        <button type="button" class="btn-outline-new-s ">Comprar</button>
-                    </section>
-                </div>
-                <div class="sobre2 col-12 col-md-6 mx-auto d-flex justify-content-center">
-                    <section class="sobre2__section">
-                        <img class="img__section" src="img/tabla-surf-3.png" alt="">          
-                        <p class="p__section-s">Tabla Naranja
-                        </p>
-                        <button type="button" class="btn-outline-new-s ">Comprar</button>
-                    </section>
-                </div>
-            </div>
+    <!-- HERO -->
+    <section class="hero">
+        <div>
+        <h1>Merchandising oficial — surf, skate y cultura MDQ</h1>
+        <p>Calidad premium, producción local y series limitadas. Llevá el espíritu de M&R Cards a tu día a día.</p>
+        <div class="cta">
+            <button class="btn__merch btn__merch--primary">Ver catálogo</button>
+            <button class="btn__merch">Cómo comprar</button>
         </div>
-                <div class="container__sobres">
-            <div class="row row--diagonal">
-                <div class="sobre-1 col-12 col-md-6 mx-auto d-flex justify-content-center">
-                    <section class="sobre1__section">
-                        <img class="img__section" src="img/tabla-surf-2.png" alt="">
-                        <p class="p__section-s">Tabla en madera
-                        </p>
-                        <button type="button" class="btn-outline-new-s ">Comprar</button>
-                    </section>
-                </div>
-                <div class="sobre2 col-12 col-md-6 mx-auto d-flex justify-content-center">
-                    <section class="sobre2__section">
-                        <img class="img__section" src="img/tabla-surf-4.png" alt="">          
-                        <p class="p__section-s">Tabla blanca con detalles en rojo y negro
-                        </p>
-                        <button type="button" class="btn-outline-new-s ">Comprar</button>
-                    </section>
+        </div>
+        <div class="hero-ill"></div>
+    </section>
+
+    <!-- CATÁLOGO -->
+    <main class="wrap">
+        <div class="grid">
+        <article class="card">
+            <div class="media">
+            <img src="img/merch-1.png" alt="Remera M&R" />
+            <span class="badge">Nuevo</span>
+            </div>
+            <div class="body">
+            <div class="title">
+                <h3>Gorras M&R Surf</h3>
+                <span>Unisex</span>
+            </div>
+            <p class="desc">Gorras cerradas de alta calidad.</p>
+            <div class="meta">
+                <span class="price">$9.900</span>
+                <div class="actions">
+                <button class="btn__merch">Detalles</button>
+                <button class="btn__merch btn__merch--primary">Agregar</button>
                 </div>
             </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="media">
+            <img src="img/merch-2.png" alt="Gorra M&R" />
+            <span class="badge">Top</span>
+            </div>
+            <div class="body">
+            <div class="title">
+                <h3>Buzo Canguro Negro</h3>
+                <span>Edición MDQ</span>
+            </div>
+            <p class="desc">Bordado con capucha en blanco y negro, frizado</p>
+            <div class="meta">
+                <span class="price">$29.500</span>
+                <div class="actions">
+                <button class="btn__merch">Detalles</button>
+                <button class="btn__merch btn__merch--primary">Agregar</button>
+                </div>
+            </div>
+            </div>
+        </article>
         </div>
     </main>
 
@@ -123,5 +139,5 @@
         <p> M&R Cards</p>
         </div>
     </footer>
-</body>
+    </body>
 </html>
