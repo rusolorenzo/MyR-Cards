@@ -56,6 +56,7 @@ body {
   animation-name: titulo-animacion;
   animation-duration: 4s;
   animation-iteration-count: infinite;
+  font-family: "Poppins", sans-serif;
 }
 
 .img__header {
@@ -87,6 +88,7 @@ body {
 .nav .nav__toggle,
 .nav .tittle {
   z-index: 10;
+  font-family: "Poppins", sans-serif;
 }
 @media (max-width: 763px) {
   .nav {
@@ -202,8 +204,6 @@ body {
   background-size: contain;
   width: 100vw;
   height: 100vh;
-  animation-name: animation-background;
-  animation-duration: 4s;
   margin-top: 0;
   padding-top: 0;
   flex: 1;
@@ -221,7 +221,7 @@ body {
   background-position: 0px 2px;
   background-size: cover;
   border-radius: 20px;
-  height: 300px;
+  height: 380px;
   z-index: 0;
 }
 .section h2,
@@ -231,6 +231,7 @@ body {
   text-align: center;
   margin-right: 30px;
   margin-top: 35px;
+  font-family: "Poppins", sans-serif;
 }
 .section p,
 .section-2 p,
@@ -239,21 +240,218 @@ body {
   text-align: center;
   margin-left: 30px;
   margin-right: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.hero-carousel .carousel-item {
+  position: relative;
+  min-height: 78svh;
+  height: auto;
+  overflow: hidden;
+}
+@media (max-width: 992px) {
+  .hero-carousel .carousel-item {
+    min-height: 70svh;
+  }
+}
+@media (max-width: 576px) {
+  .hero-carousel .carousel-item {
+    min-height: 86svh;
+  }
+}
+.hero-carousel .hero-slide {
+  /* centra y agrega aire para que no quede “aplastado” */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: clamp(20px, 6vw, 64px);
+  background-size: cover;
+  background-position: center;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+.hero-carousel .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.35) 40%, rgba(0, 0, 0, 0.55) 100%);
+}
+.hero-carousel .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  margin-inline: auto;
+  text-align: center;
+  padding-inline: clamp(12px, 4vw, 28px);
+}
+.hero-carousel .hero-content h2 {
+  font-size: clamp(22px, 5vw, 36px);
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+  text-wrap: balance;
+}
+.hero-carousel .hero-content p {
+  font-size: clamp(14px, 3.6vw, 18px);
+  line-height: 1.65;
+  margin-bottom: 1rem;
+  text-wrap: pretty;
+}
+.hero-carousel .hero-carousel {
+  position: relative;
+}
+.hero-carousel .hero-slide {
+  min-height: 78vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.hero-carousel .hero-overlay {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.35) 40%, rgba(0, 0, 0, 0.55) 100%);
+  position: absolute;
+  inset: 0;
+}
+.hero-carousel .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 920px;
+  text-align: center;
+  margin-inline: auto;
+}
+.hero-carousel .hero-content h2 {
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+.hero-carousel .hero-content p {
+  font-size: 1.05rem;
+}
+.hero-carousel .btn-cta {
+  border-radius: 999px;
+  padding: 0.9rem 1.6rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-carousel .btn-warning.btn-cta {
+  background: linear-gradient(180deg, #FFD84E 0%, #E6B800 100%);
+  color: #111;
+  border: none;
+  box-shadow: 0 10px 28px rgba(255, 216, 78, 0.35);
+}
+.hero-carousel .btn-warning.btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(255, 216, 78, 0.45);
+}
+.hero-carousel .btn-outline-light.btn-cta {
+  border-width: 2px;
+}
+.hero-carousel .btn-outline-light.btn-cta:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+.hero-carousel .community {
+  background: #0d0f14;
+}
+.hero-carousel .community .tile {
+  background: linear-gradient(145deg, #131922, #0b0f16);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.hero-carousel .community .tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+}
+.hero-carousel .card.product {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+}
+.hero-carousel .carousel-control-prev,
+.hero-carousel .carousel-control-next {
+  width: 52px;
+}
+@media (max-width: 576px) {
+  .hero-carousel .carousel-control-prev,
+  .hero-carousel .carousel-control-next {
+    width: 40px;
+  }
+}
+
+.filter-bar {
+  background: linear-gradient(145deg, #0d0f14, #161b22);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+}
+.filter-bar .search-input {
+  background: rgba(255, 255, 255, 0.07);
+  border: none;
+  color: #fff;
+  padding-left: 2.2rem;
+  font-size: 1rem;
+}
+.filter-bar .search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.filter-bar .search-input:focus {
+  box-shadow: 0 0 0 2px rgba(255, 216, 78, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+}
+.filter-bar .search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #FFD84E;
+}
+.filter-bar .series-select {
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  border: none;
+  min-width: 200px;
+}
+.filter-bar .series-select option {
+  background: #0d0f14;
+  color: #fff;
+}
+.filter-bar .series-select:focus {
+  box-shadow: 0 0 0 2px rgba(255, 216, 78, 0.5);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/img-sobres.png);
+  height: 550px;
+}
+
+section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+@media (max-width: 768px) {
+  section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 .section-2 {
-  animation: scroll-animation 3s 3s both;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/img-merch.png);
   background-position: 0px 500px;
 }
 
 .section-3 {
   margin-bottom: 50px;
-  animation: scroll-animation 3s 5s both;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/img-agenda.png);
 }
 
@@ -268,6 +466,10 @@ body {
 }
 .button-container :first-child {
   margin-bottom: 90px;
+  margin-top: -30px;
+}
+.button-container :nth-child(2) {
+  margin-top: 70px;
 }
 
 .btn {
@@ -406,12 +608,15 @@ body {
   }
   .section {
     background-position: 0px 1700px;
+    font-size: 1.3rem;
   }
   .section-2 {
     background-position: 0px 1000px;
+    font-size: 1.3rem;
   }
   .section-3 {
     background-position: 0px -250px;
+    font-size: 1.3rem;
   }
 }
 .main-sobres {
@@ -677,6 +882,22 @@ body {
   place-items: center;
   padding: clamp(20px, 4vw, 44px) 16px;
   isolation: isolate;
+}
+
+.account__panel {
+  display: none;
+}
+
+#tab-login:checked ~ .account__shell .account__panel--login {
+  display: block;
+}
+
+#tab-signup:checked ~ .account__shell .account__panel--signup {
+  display: block;
+}
+
+#tab-recover:checked ~ .account__shell .account__panel--recover {
+  display: block;
 }
 
 .account__bg {
@@ -999,6 +1220,440 @@ body {
   list-style: none;
   padding: 0;
   margin: 0 auto;
+}
+
+/* ======================================================
+   M&R CARDS — Tienda & Carrito (integra con tu paleta)
+   NOTA: No redefinimos colores; heredamos del theme.
+   ====================================================== */
+.shop-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1040;
+  backdrop-filter: blur(6px);
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.shop-toolbar .branding-title {
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
+}
+
+.card.product {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  color: inherit;
+}
+.card.product .card-title {
+  font-weight: 600;
+}
+.card.product .price {
+  font-weight: 700;
+}
+.card.product img {
+  object-fit: cover;
+}
+
+.btn-add,
+.btn-outline-buy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  color: inherit;
+  background: transparent;
+  transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+}
+.btn-add:hover,
+.btn-outline-buy:hover {
+  transform: translateY(-1px);
+  background: currentColor;
+  color: #111;
+}
+.btn-add:active,
+.btn-outline-buy:active {
+  transform: translateY(0);
+}
+
+.btn-buy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  color: #111;
+  background: currentColor;
+  transition: transform 0.15s ease, opacity 0.2s ease;
+}
+.btn-buy:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+.btn-buy:active {
+  transform: translateY(0);
+}
+
+.cart-toggle {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1050;
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  border: 0;
+  background: currentColor;
+  color: #111;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.cart-toggle #cart-badge {
+  font-weight: 700;
+}
+
+/* === Carrito sin scrollbar, layout completo === */
+#offcanvasCart {
+  width: clamp(360px, 38vw, 480px); /* más ancho pero estético */
+}
+
+#offcanvasCart.offcanvas {
+  height: 100dvh; /* ocupa toda la altura visible */
+  overflow: hidden; /* elimina scroll del contenedor */
+  overflow-x: hidden;
+}
+
+#offcanvasCart .offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden; /* evita scroll interno */
+}
+
+/* la lista del carrito puede desplazarse sin mostrar la barra */
+#offcanvasCart #cart-list {
+  flex: 1;
+  overflow: auto;
+  padding-right: 0.5rem;
+  margin-right: -0.5rem;
+  scrollbar-width: none; /* Firefox */
+}
+
+#offcanvasCart #cart-list::-webkit-scrollbar {
+  width: 0;
+  height: 0; /* Chrome/Safari */
+}
+
+/* miniaturas y filas más cómodas */
+#offcanvasCart .list-group-item {
+  padding: 0.75rem 0.5rem;
+}
+
+#offcanvasCart .mini-thumb {
+  width: 72px;
+  height: 72px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#offcanvasCart .qty-step {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 8px;
+}
+
+#offcanvasCart .item-title {
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+#offcanvasCart .line-total, #offcanvasCart #cart-subtotal {
+  font-weight: 800;
+}
+
+#offcanvasCart, #offcanvasCart * {
+  overscroll-behavior: contain; /* evita rebotes */
+}
+
+.footer-bleed {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 576px) {
+  .shop-toolbar .branding-title {
+    font-size: 1rem;
+  }
+}
+/* === M&R SHOP INTEGRATION END === */
+/* === M&R SHOP — Modernización tipográfica y contraste (manteniendo paleta) === */
+.card.product {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+.card.product .card-img-top {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.card.product .card-body {
+  position: relative;
+  color: #f2f2f2;
+}
+.card.product .card-body:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 20%, rgba(0, 0, 0, 0.35) 100%);
+  pointer-events: none;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.card.product .card-body > * {
+  position: relative;
+}
+.card.product .card-title {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+.card.product .price {
+  color: inherit;
+  opacity: 0.95;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+.card.product .btn-add, .card.product .btn-outline-buy, .card.product .btn-buy {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+#product-grid .card.product .price,
+#product-grid .card.product .card-title {
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+}
+
+.card.product a {
+  color: inherit;
+}
+
+/* === M&R SHOP — Modern Pass v2 (contraste + tipografía + carrito) === */
+/* Fuente moderna (aplicación acotada) */
+.shop-toolbar, .branding-title, .main-sobres .card.product, .offcanvas {
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
+
+/* Títulos y precios más jerárquicos */
+.main-sobres .card.product .card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.35rem;
+  letter-spacing: 0.3px;
+}
+
+.main-sobres .card.product .price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #f6f6f6;
+}
+
+/* Tarjeta moderna con overlay y padding correcto */
+.main-sobres .card.product {
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(10, 12, 16, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.main-sobres .card.product .card-img-top {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+
+.main-sobres .card.product .card-body {
+  position: relative;
+  padding: 1rem 1rem 1.1rem 1rem;
+}
+
+.main-sobres .card.product .card-body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0.45) 100%);
+  pointer-events: none;
+}
+
+.main-sobres .card.product .card-body > * {
+  position: relative;
+}
+
+/* Botones modernos (manteniendo colores por currentColor) */
+.btn-add, .btn-outline-buy, .btn-buy {
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border: 1px solid currentColor;
+  color: inherit;
+  background: transparent;
+  transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover suave sin oscurecer la card */
+.btn-add:hover,
+.btn-outline-buy:hover,
+.btn-buy:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.12); /* brillo suave */
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Efecto sutil sobre la tarjeta completa */
+.card.product:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background: rgba(20, 24, 32, 0.7); /* tono oscuro semi-transparente */
+}
+
+/* Cart button (floating) */
+.cart-toggle {
+  font-weight: 700;
+  border-radius: 999px;
+}
+
+/* Offcanvas (carrito) legible y moderno */
+.offcanvas {
+  background: rgba(10, 12, 16, 0.95);
+  backdrop-filter: blur(6px);
+}
+
+.offcanvas .offcanvas-title {
+  font-weight: 800;
+}
+
+.offcanvas .list-group-item {
+  padding: 0.9rem 0.75rem;
+}
+
+.offcanvas .mini-thumb {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.offcanvas .item-title {
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.offcanvas .item-price-line {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.offcanvas .line-total {
+  font-weight: 700;
+  color: #fff;
+}
+
+.offcanvas .qty-step {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 8px;
+}
+
+/* Mejoramos la legibilidad general de textos bajo imágenes */
+#product-grid .card.product .price,
+#product-grid .card.product .card-title {
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.28);
+}
+
+/* Toolbar spacing */
+.shop-toolbar .branding-title {
+  font-weight: 700;
+}
+
+/* === CART FIX v3 — por encima del header, sin blancos y con botones visibles === */
+.offcanvas-backdrop {
+  z-index: 1080 !important;
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+#offcanvasCart.offcanvas {
+  z-index: 1085 !important; /* delante del nav/header */
+  background: #0d0f14 !important; /* elimina parches blancos */
+  color: #f2f2f2 !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: -22px 0 60px rgba(0, 0, 0, 0.5);
+}
+
+#offcanvasCart .offcanvas-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#offcanvasCart .list-group-item {
+  background: transparent !important;
+  color: inherit !important;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+#offcanvasCart .mini-thumb {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#offcanvasCart .qty-step {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 8px;
+}
+
+/* Botón pagar visible */
+#offcanvasCart #btn-checkout {
+  background: linear-gradient(180deg, #FFD84E 0%, #E6B800 100%);
+  color: #111; /* texto oscuro para contraste */
+  border: none;
+  border-radius: 14px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 0.9rem 1rem;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(255, 216, 78, 0.3);
+  transition: all 0.25s ease;
+}
+
+#offcanvasCart #btn-checkout:hover,
+#offcanvasCart #btn-checkout:focus {
+  background: linear-gradient(180deg, #FFE066 0%, #FFCC00 100%);
+  box-shadow: 0 12px 32px rgba(255, 216, 78, 0.45);
+  transform: translateY(-2px);
+}
+
+#offcanvasCart #btn-checkout:active {
+  transform: translateY(0);
+  background: linear-gradient(180deg, #E6B800 0%, #CC9900 100%);
+  box-shadow: 0 4px 14px rgba(255, 216, 78, 0.3);
+}
+
+/* Texto aclaratorio legible */
+#offcanvasCart .text-white-50 {
+  color: rgba(255, 255, 255, 0.7) !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

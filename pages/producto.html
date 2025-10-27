@@ -13,9 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-</head>
-
 <body>
+
     <header>
         <nav class="nav">
             <div class="nav__container">
@@ -26,7 +25,7 @@
                 </label>
                 <ul class="nav__list">
                     <li class="list-item"><a class="list-link" href="../index.html">Inicio</a></li>
-                    <li class="list-item"><a class="list-link" href="Sobres_tienda.html">Colecciones</a></li>
+                    <li class="list-item"><a class="list-link" href="Sobres.html">Colecciones</a></li>
                     <li class="list-item"><a class="list-link" href="Surf.html">Mundos</a></li>
                     <li class="list-item"><a class="list-link" href="merchandising.html">Merchandising</a></li>
                     <li class="list-item"><a class="list-link" href="cuenta.html">Cuenta</a></li>
@@ -34,50 +33,8 @@
             </div>
         </nav>
     </header>
-
-    <main class="main-surf">
-        <div class="container__sobres">
-            <div class="row row--diagonal">
-                <div class="sobre-1 col-12 col-md-6 mx-auto d-flex justify-content-center">
-                    <section class="sobre1__section ">
-                        <img class="img__section" src="../img/tabla-surf-5.png" alt="">
-                        <p class="p__section-s">Tabla Surf Blanca con detalles en celeste y amarillo
-                        </p>
-                        <button type="button" class="btn-outline-new-s ">Comprar</button>
-                    </section>
-                </div>
-                <div class="sobre2 col-12 col-md-6 mx-auto d-flex justify-content-center">
-                    <section class="sobre2__section">
-                        <img class="img__section" src="../img/tabla-surf-3.png" alt="">
-                        <p class="p__section-s">Tabla Naranja
-                        </p>
-                        <button type="button" class="btn-outline-new-s ">Comprar</button>
-                    </section>
-                </div>
-            </div>
-        </div>
-        <div class="container__sobres">
-            <div class="row row--diagonal">
-                <div class="sobre-1 col-12 col-md-6 mx-auto d-flex justify-content-center">
-                    <section class="sobre1__section">
-                        <img class="img__section" src="../img/tabla-surf-2.png" alt="">
-                        <p class="p__section-s">Tabla en madera
-                        </p>
-                        <button type="button" class="btn-outline-new-s ">Comprar</button>
-                    </section>
-                </div>
-                <div class="sobre2 col-12 col-md-6 mx-auto d-flex justify-content-center">
-                    <section class="sobre2__section">
-                        <img class="img__section" src="../img/tabla-surf-4.png" alt="">
-                        <p class="p__section-s">Tabla blanca con detalles en rojo y negro
-                        </p>
-                        <button type="button" class="btn-outline-new-s ">Comprar</button>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </main>
-
+    <!-- Contenido del producto -->
+    <main class="container py-4" id="product-detail"></main>
     <footer class="footer-bleed">
         <div class="container p-4 text-center">
             <section class="mb-4">
@@ -99,12 +56,23 @@
             </section>
             <!-- Section: Social media -->
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mx-auto">
-                <ul class="list-unstyled mb-0 d-flex justify-content-center gap-3">
-                    <li><a class="links-footer" href="../index.html">inicio</a></li>
-                    <li><a class="links-footer" href="Sobres_tienda.html">Colecciones</a></li>
-                    <li><a class="links-footer" href="Surf.html">Mundos</a></li>
-                    <li><a class="links-footer" href="merchandising.html">Merch</a></li>
-                    <li><a class="links-footer" href="Cuenta.html">Cuenta</a></li>
+
+                <ul class="list-unstyled mb-0 d-flex justify-content-center gap-3 ">
+                    <li>
+                        <a class="links-footer" href="../index.html">inicio</a>
+                    </li>
+                    <li>
+                        <a class="links-footer" href="Sobres.html">Colecciones</a>
+                    </li>
+                    <li>
+                        <a class="links-footer" href="Surf.html">Mundos</a>
+                    </li>
+                    <li>
+                        <a class="links-footer" href="Socios.html">Socios</a>
+                    </li>
+                    <li>
+                        <a class="links-footer" href="Cuenta.html">Cuenta</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -113,6 +81,10 @@
             <p> M&R Cards</p>
         </div>
     </footer>
+    <!-- Bootstrap (JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Lógica del detalle -->
+    <script src="/js/product.js"></script>
 </body>
 
 </html>

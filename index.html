@@ -1,116 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MYR CARDS</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MYR CARDS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <div class="nav__container">
-                    <img class="img__header" src="img/Logo.jpeg" alt="">
-                <h1 class="tittle"> M&R CARDS</h1>
-                <label class="nav__toggle">
-                    <input type="checkbox" name="" class="nav__input">
-                </label>
-                    <ul class="nav__list">
-                        <li class="list-item"><a class="list-link" href="index.html">Inicio</a></li>
-                        <li class="list-item"><a class="list-link" href="pages/Sobres.html">Colecciones</a></li>
-                        <li class="list-item"><a class="list-link" href="pages/Surf.html">Mundos</a></li>
-                        <li class="list-item"><a class="list-link" href="pages/merchandising.html">Merchandising</a></li>
-                        <li class="list-item"><a class="list-link" href="pages/cuenta.html">Cuenta</a></li>
-                    </ul>
-            </div>
-        </nav>
-    </header>
-    <main class="main">
-        <section class="section">
-            <h2>Nuevo juego de Cartas M&R Cards</h2>
-            <p>
-                El Nuevo juego de Cartas de M & R Cards ya salió! 
-                Disfrutá de la salida de <strong>MDQ Especial Surf GTX</strong>. 
-                Encontrá a tus héroes favoritos, creá tu propio héroe, 
-                jugá tus batallas y viajá por el mundo del surf.
-            </p>
-            <div class="button-container">
-                <a href="pages/Sobres.html" class="btn">COMPRA ACÁ</a>
-            </div>
-        </section>
-                <section class="section-2">
-            <h2>Merchandising Oficial</h2>
-            <p>
-                Encontrá toda la indumentaria de M&R Cards, diferentes tamaños y colores.
-            </p>
-            <div class="button-container">
-                <a href="pages/merchandising.html" class="btn">MIRA EL MERCH</a>
-            </div>
-        </section>
-                <section class="section-3">
-            <h2>Todo Surf</h2>
-            <p>
-                Descubrí todos los productos de surf disponibles en M&R
-            </p>
-            <div class="button-container">
-                <a href="pages/Surf.html" class="btn">TOCA ACÁ</a>
-            </div>
-        </section>
-    </main>
+  <header>
+    <nav class="nav">
+      <div class="nav__container">
+        <img class="img__header" src="img/Logo.jpeg" alt="">
+        <h1 class="tittle"> M&R CARDS</h1>
+        <label class="nav__toggle"><input type="checkbox" class="nav__input"></label>
+        <ul class="nav__list">
+          <li class="list-item"><a class="list-link" href="index.html">Inicio</a></li>
+          <li class="list-item"><a class="list-link" href="pages/Sobres_tienda.html">Colecciones</a></li>
+          <li class="list-item"><a class="list-link" href="pages/Surf.html">Mundos</a></li>
+          <li class="list-item"><a class="list-link" href="pages/merchandising.html">Merchandising</a></li>
+          <li class="list-item"><a class="list-link" href="pages/cuenta.html">Cuenta</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-<footer class="footer-bleed">
+  <main>
+    <section class="position-relative">
+      <div id="hero" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="4500">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="hero-slide section position-relative">
+              <div class="hero-overlay"></div>
+              <div class="container hero-content text-light py-5">
+                <h2 class="mb-3">¿Qué es M&R Cards?</h2>
+                <p class="mb-4">Nacemos en Mar del Plata, Argentina, donde el mar y la calle se cruzan con el arte y la libertad. Desde esta costa icónica surge M&R CARDS, un universo creativo que fusiona el espíritu del surf, el skate, la música urbana y el graffiti con el coleccionismo contemporáneo. Somos una marca que transforma la energía del movimiento en piezas únicas: cartas de arte, juegos coleccionables y objetos culturales que viajan desde la arena de MDQ hacia el mundo. Cada carta es una historia, cada diseño una ola, cada obra un puente entre culturas, artistas y generaciones. M&R CARDS no solo crea colecciones: construye comunidad, impulsa la identidad de los barrios, los artistas, los shapers, los músicos y los soñadores que respiran el ritmo del mar y las calles. Inspirados en la autenticidad y la innovación, aspiramos a ser el faro global del arte urbano latinoamericano, conectando la fuerza del Atlántico con las playas, pistas y escenarios del mundo. Desde Mar del Plata hacia todos los continentes: El arte se ve, se usa, se vive y se escucha.</p>
+                <a href="pages/Sobres.html" class="btn btn-warning btn-cta">COMPRA ACÁ</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero-slide section-2 position-relative">
+              <div class="hero-overlay"></div>
+              <div class="container hero-content text-light py-5">
+                <h2 class="mb-3">Visión</h2>
+                <p class="mb-4">Somos una marca global desde Mar del Plata que expresa cultura, arte y comunidad, conectando el arte, el deporte y el coleccionismo de todo el mundo a través de cartas de edición limitada, tanto físicas como digitales, con autenticidad verificada.</p>
+                <a href="pages/merchandising.html" class="btn btn-outline-light btn-cta">MIRA EL MERCH</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero-slide section-3 position-relative">
+              <div class="hero-overlay"></div>
+              <div class="container hero-content text-light py-5">
+                <h2 class="mb-3">Nuestra esencia</h2>
+                <p class="mb-4">Cada carta de M&R Cards es: Una obra de arte: creada con inspiración en el arte moderno, el surf, el skate y el urbanismo cultural. Un objeto de colección: numerada, firmada y registrada digitalmente para garantizar su autenticidad. Una historia: detrás de cada diseño hay una fusión entre lo local y lo global, lo natural y lo tecnológico. Un puente entre mundos: el físico y el digital.</p>
+                <a href="pages/Surf.html" class="btn btn-outline-light btn-cta">TOCA ACÁ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="community py-5">
+      <div class="container text-center text-light">
+        <h2 class="fw-bold mb-4">Nuestra comunidad global</h2>
+        <p class="text-white-50 mb-5 mx-auto" style="max-width:800px;">Desde Mar del Plata hacia el mundo — artistas, surfistas, skaters y coleccionistas forman parte de una red que celebra el arte y la autenticidad. M&R Cards conecta creatividad, cultura y pasión en cada rincón del planeta.</p>
+        <div class="row g-4 justify-content-center mb-4">
+          <div class="col-6 col-md-3">
+            <div class="tile p-4 rounded-4 text-light"><i class="fa-solid fa-palette fa-2x mb-3 text-warning"></i><h6 class="m-0">Artistas</h6></div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="tile p-4 rounded-4 text-light"><i class="fa-solid fa-water fa-2x mb-3 text-info"></i><h6 class="m-0">Surfistas</h6></div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="tile p-4 rounded-4 text-light"><i class="fa-solid fa-person-skating fa-2x mb-3 text-primary"></i><h6 class="m-0">Skaters</h6></div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="tile p-4 rounded-4 text-light"><i class="fa-solid fa-certificate fa-2x mb-3 text-warning"></i><h6 class="m-0">Coleccionistas</h6></div>
+          </div>
+        </div>
+        <a href="pages/Sobres_tienda.html" class="btn btn-warning btn-cta mt-2">Sumate al universo M&R</a>
+      </div>
+    </section>
+
+    <section class="container pb-5">
+      <div class="card product p-4">
+        <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+          <img src="img/sobres-frente.png" class="rounded" style="width:160px;height:160px;object-fit:cover;" alt="M&R Cards">
+          <div class="flex-grow-1">
+            <h4 class="mb-2">Conocé nuestras colecciones</h4>
+            <p class="text-white-50 mb-3">Descubrí cartas y sobres con estética Black Edition y ADN costero.</p>
+            <div class="d-flex gap-2">
+              <a href="pages/Sobres_tienda.html" class="btn btn-warning btn-cta">Comprar ahora</a>
+              <a href="pages/Surf.html" class="btn btn-outline-light btn-cta">Explorar mundos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-bleed">
     <div class="container p-4 text-center">
-        <section class="mb-4">
-            <!-- Facebook -->
-            <a data-mdb-ripple-init class="btn-footer btn-outline btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-facebook-f"></i
-            ></a>
-
-            <!-- Twitter -->
-            <a data-mdb-ripple-init class="btn-footer btn-outline btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-twitter"></i
-            ></a>
-
-            <!-- Google -->
-            <a data-mdb-ripple-init class="btn-footer btn-outline btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-google"></i
-            ></a>
-
-            <!-- Instagram -->
-            <a data-mdb-ripple-init class="btn-footer btn-outline btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-instagram"></i
-            ></a>   
-        </section>
-        <!-- Section: Social media -->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mx-auto">
-
-            <ul class="list-unstyled mb-0 d-flex justify-content-center gap-3 ">
-                <li>
-                <a class="links-footer" href="index.html">inicio</a>
-                </li>
-                <li>
-                <a class="links-footer" href="pages/Sobres.html">Colecciones</a>
-                </li>
-                <li>
-                <a class="links-footer" href="pages/Surf.html">Mundos</a>
-                </li>
-                                <li>
-                <a class="links-footer" href="pages/merchandising.html">Merch</a>
-                </li>
-                <li>
-                <a class="links-footer" href="pages/cuenta.html">Cuenta</a>
-                </li>
-            </ul>
-            </div>
+      <section class="mb-4">
+        <a class="btn-footer btn-outline btn-floating m-1" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn-footer btn-outline btn-floating m-1" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="btn-footer btn-outline btn-floating m-1" href="#"><i class="fab fa-google"></i></a>
+        <a class="btn-footer btn-outline btn-floating m-1" href="#"><i class="fab fa-instagram"></i></a>
+      </section>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mx-auto">
+        <ul class="list-unstyled mb-0 d-flex justify-content-center gap-3">
+          <li><a class="links-footer" href="index.html">inicio</a></li>
+          <li><a class="links-footer" href="pages/Sobres_tienda.html">Colecciones</a></li>
+          <li><a class="links-footer" href="pages/Surf.html">Mundos</a></li>
+          <li><a class="links-footer" href="pages/merchandising.html">Merch</a></li>
+          <li><a class="links-footer" href="pages/cuenta.html">Cuenta</a></li>
+        </ul>
+      </div>
     </div>
-    <div id="Copyright" class="text-center p-3";>
-    © 2025 M&R Copyright:
-    <p> M&R Cards</p>
-    </div>
-</footer>
+    <div id="Copyright" class="text-center p-3">© 2025 M&R Copyright:<p> M&R Cards</p></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>
